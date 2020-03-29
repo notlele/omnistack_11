@@ -1,3 +1,9 @@
-document.querySelector("button.fat").addEventListener("click", function () {
-    document.querySelector("#footer").classList.toggle("hide");
-});
+function newIdea() {
+    document.querySelector("#modal").classList.toggle("hide");
+}
+
+function goIdea() {
+    document.querySelector("button.fat").addEventListener("click", newIdea());
+}
+
+// 
