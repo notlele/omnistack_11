@@ -1,9 +1,7 @@
 const express = require('express');
-const app = express();
+const routes = express.Router();
 
-app.use(express.json());
-
-app.post('/users', (req, res) => {
+routes.post('/users', (req, res) => {
     const body = req.body;
 
     console.log(body);
@@ -14,4 +12,6 @@ app.post('/users', (req, res) => {
     });
 });
 
-app.listen(3333);
+routes.listen(3333);
+
+module.exports = routes;
