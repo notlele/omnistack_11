@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router();
 
-routes.post('/users', (req, res) => {
+routes.post('/ongs', (req, res) => {
     const body = req.body;
 
     console.log(body);
